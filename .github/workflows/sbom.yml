@@ -22,7 +22,7 @@ jobs:
             -H "Accept: application/vnd.github+json" \
             -H "Authorization: ${{ secrets.GITHUB_TOKEN }}" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
-            "https://github.com/rahiCICD/naabu/dependency-graph/sbom")
+            "https://api.github.com/repos/rahiCICD/naabu/dependency-graph/sbom")
           echo "$response" > sbom.json
 
       - name: Set up Python
