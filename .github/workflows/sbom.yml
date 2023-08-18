@@ -46,7 +46,7 @@ jobs:
           packages = sbom.get("packages", [])
 
           # Create CSV file and write header row
-          with open("sbom.csv", mode="w", newline="") as file:
+          with open("modeler.csv", mode="w", newline="") as file:
               writer = csv.writer(file)
               writer.writerow(["Package ID", "Package Name", "Version", "Download Location", "License Declared", "License Concluded", "Files Analyzed", "Supplier"])
 
